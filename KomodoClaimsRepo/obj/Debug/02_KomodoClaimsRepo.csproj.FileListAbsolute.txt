@@ -1,0 +1,6 @@
+C:\ElevenFiftyProjects\Challenges\Gold badge\KomodoCafe\KomodoClaimsRepo\bin\Debug\KomodoClaimsRepo.dll
+C:\ElevenFiftyProjects\Challenges\Gold badge\KomodoCafe\KomodoClaimsRepo\bin\Debug\KomodoClaimsRepo.pdb
+C:\ElevenFiftyProjects\Challenges\Gold badge\KomodoCafe\KomodoClaimsRepo\obj\Debug\02_KomodoClaimsRepo.csprojAssemblyReference.cache
+C:\ElevenFiftyProjects\Challenges\Gold badge\KomodoCafe\KomodoClaimsRepo\obj\Debug\02_KomodoClaimsRepo.csproj.CoreCompileInputs.cache
+C:\ElevenFiftyProjects\Challenges\Gold badge\KomodoCafe\KomodoClaimsRepo\obj\Debug\KomodoClaimsRepo.dll
+C:\ElevenFiftyProjects\Challenges\Gold badge\KomodoCafe\KomodoClaimsRepo\obj\Debug\KomodoClaimsRepo.pdb

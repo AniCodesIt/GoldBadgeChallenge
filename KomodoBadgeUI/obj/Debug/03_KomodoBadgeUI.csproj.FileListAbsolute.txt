@@ -1,0 +1,7 @@
+C:\ElevenFiftyProjects\Challenges\Gold badge\KomodoCafe\KomodoBadgeUI\obj\Debug\03_KomodoBadgeUI.csprojAssemblyReference.cache
+C:\ElevenFiftyProjects\Challenges\Gold badge\KomodoCafe\KomodoBadgeUI\obj\Debug\03_KomodoBadgeUI.csproj.CoreCompileInputs.cache
+C:\ElevenFiftyProjects\Challenges\Gold badge\KomodoCafe\KomodoBadgeUI\bin\Debug\KomodoBadgeUI.exe.config
+C:\ElevenFiftyProjects\Challenges\Gold badge\KomodoCafe\KomodoBadgeUI\bin\Debug\KomodoBadgeUI.exe
+C:\ElevenFiftyProjects\Challenges\Gold badge\KomodoCafe\KomodoBadgeUI\bin\Debug\KomodoBadgeUI.pdb
+C:\ElevenFiftyProjects\Challenges\Gold badge\KomodoCafe\KomodoBadgeUI\obj\Debug\KomodoBadgeUI.exe
+C:\ElevenFiftyProjects\Challenges\Gold badge\KomodoCafe\KomodoBadgeUI\obj\Debug\KomodoBadgeUI.pdb
