@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace KomodoBadgeUI
 {
-    class Program
+    class BadgeProgram
     {
         static void Main(string[] args)
         {
-           // Program_UI UI = new Program_UI();
-            //UI.Run();
+           BadgeUI UI = new BadgeUI();
+            UI.Run();
         }
     }
 }

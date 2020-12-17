@@ -43,11 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="BadgeProgram.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BadgeUI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\03_BadgeRepository\03_BadgeRepository.csproj">
+      <Project>{49c2de7d-0ca4-417f-afaf-3d6311402831}</Project>
+      <Name>03_BadgeRepository</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

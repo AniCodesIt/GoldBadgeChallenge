@@ -31,8 +31,20 @@ namespace _03_BadgeRepository
             Badge blankBadge = new Badge(BadgeID);
             _badgeDictionary.Add(BadgeID, blankBadge);
         }
-	 //show a list with all badge numbers and door access
+        //show a list with all badge numbers and door access
+        public Dictionary<int, Badge> ShowEverything()
+        {
+           return _badgeDictionary;
+        }
 
+        public Badge ReturnOneBadge(int BadgeID)
+        {        
+                return _badgeDictionary[BadgeID];
+        }
+        public void loadData()
+        {
+
+        }
 
     }
 }

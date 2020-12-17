@@ -71,7 +71,8 @@ namespace _02_KomodoClaims_UnitTest
             controlData.CopyTo(controlArray, 0);
 
             //comparing the 2 arrays
-            CollectionAssert.AreEqual(controlArray, tempArray);
+            Assert.AreEqual(controlArray[0].Description, tempArray[0].Description);
+            //dont need arrays here
 
         }
 
