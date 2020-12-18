@@ -20,8 +20,7 @@ namespace KomodoClaimsUI
 
         //Menu
         private void Menu()
-        {
-            //ClaimsRepository repoWindow = new ClaimsRepository();
+        {          
             
 
             bool keepRunning = true;
@@ -91,9 +90,9 @@ namespace KomodoClaimsUI
 
         private void NextClaim()
         {
-            ClaimsRepository nextClaim = new ClaimsRepository();
+           
             ClaimContent thisClaim;
-            thisClaim = nextClaim.DisplayClaim();
+            thisClaim = repoWindow.DisplayClaim();
             Console.WriteLine(thisClaim.ClaimID + " " +
                                   thisClaim.ClaimType + " " +
                                   thisClaim.ClaimAmount + " " +
@@ -105,7 +104,7 @@ namespace KomodoClaimsUI
             string userInput = Console.ReadLine();
             if (userInput.ToLower() == "y")
             {
-                nextClaim.TakeCareOfNextClaim();
+                repoWindow.TakeCareOfNextClaim();
             }
 
         }

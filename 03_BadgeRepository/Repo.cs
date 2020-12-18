@@ -41,10 +41,7 @@ namespace _03_BadgeRepository
         {        
                 return _badgeDictionary[BadgeID];
         }
-        public void loadData()
-        {
-
-        }
+        
 
     }
 }

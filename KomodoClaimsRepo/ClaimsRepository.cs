@@ -22,8 +22,10 @@ namespace KomodoClaimsRepo
             _claimsQueue.Dequeue();
         }
         public ClaimContent DisplayClaim()
-        {
-            return _claimsQueue.Peek();
+        {          
+            
+           
+                return _claimsQueue.Peek();
         }
         //3. Enter a new claim
         public void AddClaimToQueue(ClaimContent newclaim)
