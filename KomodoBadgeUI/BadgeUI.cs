@@ -9,7 +9,7 @@ namespace KomodoBadgeUI
 {
     public class BadgeUI
     {
-        private Repo repoWindow = new Repo();
+        private BadgeRepo repoWindow = new BadgeRepo();
 
 
         public void Run()

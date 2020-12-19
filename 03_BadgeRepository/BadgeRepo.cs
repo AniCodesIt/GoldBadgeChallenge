@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _03_BadgeRepository
 {
-    public class Repo
+    public class BadgeRepo
     {
         public Dictionary<int, Badge> _badgeDictionary = new Dictionary<int, Badge>();
 

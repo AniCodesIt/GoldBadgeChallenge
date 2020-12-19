@@ -12,3 +12,5 @@ C:\ElevenFiftyProjects\Challenges\Gold badge\KomodoCafe\03_KomoBadge_UnitTest\ob
 C:\ElevenFiftyProjects\Challenges\Gold badge\KomodoCafe\03_KomoBadge_UnitTest\obj\Debug\03_KomoBadge_UnitTest.csproj.CopyComplete
 C:\ElevenFiftyProjects\Challenges\Gold badge\KomodoCafe\03_KomoBadge_UnitTest\obj\Debug\03_KomoBadge_UnitTest.dll
 C:\ElevenFiftyProjects\Challenges\Gold badge\KomodoCafe\03_KomoBadge_UnitTest\obj\Debug\03_KomoBadge_UnitTest.pdb
+C:\ElevenFiftyProjects\Challenges\Gold badge\KomodoCafe\03_KomoBadge_UnitTest\bin\Debug\03_BadgeRepository.dll
+C:\ElevenFiftyProjects\Challenges\Gold badge\KomodoCafe\03_KomoBadge_UnitTest\bin\Debug\03_BadgeRepository.pdb

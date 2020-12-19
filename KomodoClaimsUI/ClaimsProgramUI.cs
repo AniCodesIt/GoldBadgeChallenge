@@ -110,8 +110,7 @@ namespace KomodoClaimsUI
         }
 
         private void EnterNewClaim()
-        {
-            ClaimsRepository claimsRepo = new ClaimsRepository();
+        {          
             ClaimContent newClaim = new ClaimContent();
             Console.WriteLine("Enter Claim ID: ");
             newClaim.ClaimID = Console.ReadLine();
@@ -154,7 +153,7 @@ namespace KomodoClaimsUI
                 newClaim.IsValid = true;
             }       
 
-            claimsRepo.AddClaimToQueue(newClaim);
+            repoWindow.AddClaimToQueue(newClaim);
         }
 
     }
