@@ -57,20 +57,75 @@ namespace _03_KomoBadge_UnitTest
             //Get the number of doors in the ANOTHER list.
             int resultDoorCount = resultDoorList.Count; // should be 5
             Assert.AreEqual(5, resultDoorList.Count);
+        }
+        [TestMethod]      
+        public void DeleteAllDoorsTest()
+        {
+            List<string> doors4 = new List<string>();
 
-            
+            doors4.Add("A1");
+            doors4.Add("A5");
+            doors4.Add("B5");
+            doors4.Add("B7");           
+            Badge B4 = new Badge(52345, doors4);           
+            repoWindow._badgeDictionary.Add(52345, B4);
+
+            repoWindow.DeleteAllDoors(52345);
+            Badge tempBadge = new Badge();
+            tempBadge = repoWindow.ReturnOneBadge(52345);           
+            Assert.AreEqual(null, tempBadge.DoorNames);
+        }
+
+        [TestMethod]
+        public void ShowEverythingTest()
+        {
+            loadData();
+
+            Dictionary<int, Badge> tempVar = new Dictionary<int, Badge>();
+            //tempVar hold the data from GetClaimsQueue
+            tempVar = repoWindow.ShowEverything();
+
+            //building out control data
+            Dictionary<int, Badge> controlData = new Dictionary<int, Badge>();
+
+            List<string> doors1 = new List<string>();
+            List<string> doors2 = new List<string>();
+            List<string> doors3 = new List<string>();
+
+            doors1.Add("A7");
+            Badge B1 = new Badge(12345, doors1);
+            doors2.Add("A1");
+            doors2.Add("A4");
+            doors2.Add("B1");
+            doors2.Add("B2");
+            Badge B2 = new Badge(22345, doors2);
+            doors3.Add("A4");
+            doors3.Add("A5");
+            Badge B3 = new Badge(32345, doors3);
+
+            controlData.Add(12345, B1);
+            controlData.Add(22345, B2);
+            controlData.Add(32345, B3);           
 
 
+            Assert.AreEqual(controlData.Count, tempVar.Count);            
+        }
+        [TestMethod]
+        public void ReturnOneBadgeTest()
+        {
+            List<string> doors2 = new List<string>();
+            doors2.Add("A1");
+            doors2.Add("A4");
+            doors2.Add("B1");
+            doors2.Add("B2");
+            Badge B2 = new Badge(22345, doors2);
 
+            repoWindow._badgeDictionary.Add(22345, B2);
 
-            //create a brand new badge
-            //add the badge to the dictionary
-            //in the badge we already had created, add another door to the list
-            //run UpdateDoors inputting the newBadge again (with the updated list of doors)
-            //check the result
+            Badge oneBadge = new Badge();
+            oneBadge = repoWindow.ReturnOneBadge(22345);
 
-
-            //
+            Assert.AreEqual(oneBadge.DoorNames, B2.DoorNames);
         }
 
 
@@ -99,7 +154,6 @@ namespace _03_KomoBadge_UnitTest
 
 
         }
-
     }
 }
 
