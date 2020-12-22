@@ -12,10 +12,8 @@ namespace KomodoCafeRepo
         public List<MenuDataModel> FullListOfMenuItems = new List<MenuDataModel>();
       
         public void CreateAMenuItem(MenuDataModel newMenuItem)
-        {
-           
+        {           
             FullListOfMenuItems.Add(newMenuItem);
-
         }
       
         public List<MenuDataModel> GetAllMenuItems()

@@ -49,11 +49,21 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="KomodoCafeUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KomodoCafeRepo\01_KomodoCafeRepo.csproj">
+      <Project>{cdd3ca31-157e-48c9-839a-9208405966ca}</Project>
+      <Name>01_KomodoCafeRepo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KomodoCafe\01_KomodoCafe_UI.csproj">
+      <Project>{a241536c-4b4f-461a-b9bf-e8ce3c289506}</Project>
+      <Name>01_KomodoCafe_UI</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

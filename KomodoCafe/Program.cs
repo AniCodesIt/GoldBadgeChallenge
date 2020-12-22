@@ -12,7 +12,7 @@ namespace KomodoCafe
        
         static void Main(string[] args)
         {
-            ProgramUI UI = new ProgramUI();
+            KomodoCafeUI UI = new KomodoCafeUI();
             UI.RunMenu();
   
 

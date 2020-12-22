@@ -8,12 +8,12 @@ using KomodoCafeRepo;
 
 namespace KomodoCafe
 {
-    class ProgramUI
+    public class KomodoCafeUI
     {
         MenuRepository menuRepository = new MenuRepository();
         public void RunMenu()
         {
-            menuRepository.loaddata();
+            loaddata();
 
 
             bool isRunning = true;
