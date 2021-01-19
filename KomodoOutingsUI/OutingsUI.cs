@@ -14,8 +14,7 @@ namespace KomodoOutingsUI
         REPO repoWindow = new REPO();
         public void RunMenu()
         {
-            //TODO
-            // loaddata();
+            repoWindow.LoadData();
 
 
             bool isRunning = true;
@@ -60,19 +59,19 @@ namespace KomodoOutingsUI
         //list of outings
         private void ViewListOfEvents()
         {
-            List<POCO> events = repoWindow.ReturnListOfEvents();
+            List<POCO> events = repoWindow.ReturnListOfEvents();        
             string returnString = "";
 
             foreach (var item in events)
             {
+                returnString = "";
                 returnString += item.EventType + ": " +
                               item.NumberofPeople + " - " +
                               item.Date.ToString() + " " +
                               "$ " + item.CostPerPerson.ToString() +
                               "$ " + item.CostOfEvent.ToString();
 
-                returnString += "\n    ";
-                Console.WriteLine();
+                Console.WriteLine(returnString);
             }
         }
 
@@ -81,7 +80,11 @@ namespace KomodoOutingsUI
         {
             POCO outing = new POCO();
 
-            Console.WriteLine("What type of event? ");
+            Console.WriteLine("What type of event? \n" +
+                "1 for Golf \n" +
+                "2 for Bowling \n" +
+                "3 for Amusement Park \n" +
+                "4 for Concert");
             string eventType = Console.ReadLine();
 
             Console.WriteLine("How many people will be there? ");
@@ -95,7 +98,8 @@ namespace KomodoOutingsUI
 
             decimal eventCost = int.Parse(numberOfPeople) * decimal.Parse(costPerPerson);
 
-            outing.EventType = eventType;
+            //Why did it need POCO.Events instead of just (Events) to cast here?
+            outing.EventType = (POCO.Events)int.Parse(eventType);
             outing.NumberofPeople = int.Parse(numberOfPeople);
             outing.Date = DateTime.Parse(date);
             outing.CostPerPerson = decimal.Parse(costPerPerson);
@@ -120,10 +124,12 @@ namespace KomodoOutingsUI
             List<POCO> tempVar = repoWindow.ReturnListOfEvents();
             Console.WriteLine("Which event type do you want to total? ");
             string eventType = Console.ReadLine();
+            int tempEvent = int.Parse(eventType);
+            POCO.Events castedEvent = (POCO.Events)tempEvent;
             decimal total = 0;
             foreach (var item in tempVar)
             {
-                if (item.EventType == eventType)
+                if (item.EventType == castedEvent)
                 {
                     total = total + item.CostOfEvent;
                 }

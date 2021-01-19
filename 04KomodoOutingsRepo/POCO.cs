@@ -8,23 +8,39 @@ namespace _04KomodoOutingsRepo
 {
     public class POCO
     {
-        public string EventType { get; set; }
+        public Events EventType { get; set; }
         public int NumberofPeople { get; set; }
         public DateTime Date { get; set;}
         public decimal CostPerPerson { get; set; }
         public decimal CostOfEvent { get; set; }
 
-        public POCO(string eventType, int numberOfPeople, DateTime date, decimal costPerPerson, decimal costOfEvent)
+        public POCO(int eventType, int numberOfPeople, DateTime date, decimal costPerPerson, decimal costOfEvent)
         {
-            EventType = eventType;
+            EventType = (Events)eventType;
             NumberofPeople = numberOfPeople;
             Date = date;
-            CostPerPerson = costPerPerson;
-            CostOfEvent = costOfEvent;
+            CostPerPerson = (decimal)costPerPerson;
+            CostOfEvent = (decimal)costOfEvent;
+        }
+        public POCO(int eventType, int numberOfPeople, DateTime date, double costPerPerson)
+        {
+            EventType = (Events)eventType;
+            NumberofPeople = numberOfPeople;
+            Date = date;
+            CostPerPerson = (decimal)costPerPerson;
+            CostOfEvent = numberOfPeople * (decimal)costPerPerson;
         }
         public POCO()
         {
         }
+        public enum Events
+        {
+            Golf = 1, 
+            Bowling, 
+            Amusement_Park, 
+            Concert
+        }
     }
+
     
 }
